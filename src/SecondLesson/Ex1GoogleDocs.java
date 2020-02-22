@@ -9,6 +9,10 @@ public class Ex1GoogleDocs {
 
     public static void main(String[] args) {
 
+//        Можно пройтись в цикле по каждой цифре (будет универсальное решение для числа любой разрядности)
+
+//      Не понял что нужно сделать. Поясните, пожалуйста.
+
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter number");
         int a = scan.nextInt();

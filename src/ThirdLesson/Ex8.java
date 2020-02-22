@@ -11,36 +11,58 @@ public class Ex8 {
     public static void main(String[] args) {
 
         Random rand = new Random();
-        int x =rand.nextInt(10);
+        int x =rand.nextInt();
+//
+//        if (x > 0) {
+//
+//            switch (x) {
+//
+//                case 1:
+//                    System.out.println(x + " Рубль");
+//                    break;
+//                case 2:
+//                    System.out.println(x + " Рубля");
+//                    break;
+//                case 3:
+//                    System.out.println(x + " Рубля");
+//                    break;
+//                case 4:
+//                    System.out.println(x + " Рубля");
+//                    break;
+//
+//            }
+//
+//            if (x > 4) {
+//
+//                System.out.println(x + " Рублей");
+//
+//            }
+//
+//        } else {
+//
+//            System.out.println("Zero");
+//        }
+
+
+//        switch - case тут не лучшее решение.
+//                Не все условия соблюдены (попробуй 21,22 и т.п.) (c)
 
         if (x > 0) {
 
-            switch (x) {
+            if (x % 10 > 1 && x % 10 < 5) {
 
-                case 1:
-                    System.out.println(x + " Рубль");
-                    break;
-                case 2:
-                    System.out.println(x + " Рубля");
-                    break;
-                case 3:
-                    System.out.println(x + " Рубля");
-                    break;
-                case 4:
-                    System.out.println(x + " Рубля");
-                    break;
+                System.out.println(x + " рубля");
 
+            } else if (x % 10 > 4 && x% 10 < 10 || x % 10 == 0) {
+
+                System.out.println(x + " рублей");
+            } else {
+
+                System.out.println(x + " рубль");
             }
-
-            if (x > 4) {
-
-                System.out.println(x + " Рублей");
-
-            }
-
         } else {
 
-            System.out.println("Zero");
+            System.out.println("Negative number");
         }
 
     }

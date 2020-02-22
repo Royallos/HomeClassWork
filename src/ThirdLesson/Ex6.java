@@ -26,22 +26,28 @@ public class Ex6 {
 
             }
 
+        }
+
             if (a % 2 == 0) {
 
                 System.out.println("Even number ");
 
             }
 
-            for (int i = 7; i < 1000; i += 10) {
+//            for (int i = 7; i < 1000; i += 10) {
 
-                if (a == i) {
+
+
+//            можно просто взять остаток от деления. Число 1007 хоть и 4х значное, но заканчивается на 7ку
+
+
+
+                if (a % 10 == 7) {
 
                     System.out.println("Number is ending '7'");
                 }
 
-            }
-
-        }
+//            }
 
     }
 

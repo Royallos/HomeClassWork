@@ -8,7 +8,7 @@ public class Ex5 {
 
     public static void main(String[] args) {
 
-        int n = 1111;
+        int n = 1234;
 
         int z = n % 10;
         int a = n - z;
@@ -18,13 +18,18 @@ public class Ex5 {
         int c = b - x;
         int w = (c % 10000) / 1000;
 
-        if (z==y && y==x && x==w) {
+//        if (z==y && y==x && x==w) {
 
-            System.out.println("All num is the same");
+//        не правильно условие построено. Надо проверить что все цифры числа разные (c)
+
+        if (z!=y && z!=x && z!=w && y!=x && y!=w && x!=w) {
+
+
+                System.out.println("All numbers are different");
 
         } else {
 
-            System.out.println("All num isn't the same");
+            System.out.println("Some numbers are the same");
         }
 
     }
