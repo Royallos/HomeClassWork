@@ -1,11 +1,14 @@
 package lesson8.robot1;
 
+import lesson8.robot1.hands.IHand;
 import lesson8.robot1.hands.SamsungHand;
 import lesson8.robot1.hands.SonyHand;
 import lesson8.robot1.hands.ToshibaHand;
+import lesson8.robot1.heads.IHead;
 import lesson8.robot1.heads.SamsungHead;
 import lesson8.robot1.heads.SonyHead;
 import lesson8.robot1.heads.ToshibaHead;
+import lesson8.robot1.legs.ILeg;
 import lesson8.robot1.legs.SamsungLeg;
 import lesson8.robot1.legs.SonyLeg;
 import lesson8.robot1.legs.ToshibaLeg;
@@ -23,17 +26,17 @@ public class Run {
 
         int maxPrice = 0;
        
-        SamsungHead samsungHead = new SamsungHead(20);
-        SonyHead sonyHead = new SonyHead(25);
-        ToshibaHead toshibaHead = new ToshibaHead(15);
+        IHead samsungHead = new SamsungHead(20);
+        IHead sonyHead = new SonyHead(25);
+        IHead toshibaHead = new ToshibaHead(15);
 
-        SamsungHand samsungHand = new SamsungHand(15);
-        SonyHand sonyHand = new SonyHand(5);
-        ToshibaHand toshibaHand= new ToshibaHand(15);
+        IHand samsungHand = new SamsungHand(15);
+        IHand sonyHand = new SonyHand(5);
+        IHand toshibaHand= new ToshibaHand(15);
 
-        SamsungLeg samsungLeg = new SamsungLeg(10);
-        SonyLeg sonyLeg = new SonyLeg(5);
-        ToshibaLeg toshibaLeg = new ToshibaLeg(5);
+        ILeg samsungLeg = new SamsungLeg(10);
+        ILeg sonyLeg = new SonyLeg(5);
+        ILeg toshibaLeg = new ToshibaLeg(5);
 
         Robot robot1 = new Robot(sonyHead, samsungHand, toshibaLeg);
         Robot robot2 = new Robot(sonyHead, sonyHand, samsungLeg);

@@ -10,12 +10,12 @@ package lesson8.transport;
 ////        Расчёт мощности в киловаттах производится в отдельном методе :
 ////        1 л.с = 0.74 кВ
 
-public class ForPeople extends Air {
+public class PeoplesAirplane extends Airplane {
 
     boolean business;
     int maxPassangers;
 
-    public ForPeople (String brand, double maxSpeed, double massa, int power, double height, double lengthOfRoad, boolean business, int maxPassangers) {
+    public PeoplesAirplane(String brand, double maxSpeed, double massa, int power, double height, double lengthOfRoad, boolean business, int maxPassangers) {
 
         super(brand, maxSpeed, massa, power, height, lengthOfRoad);
         this.business = business;
@@ -29,7 +29,7 @@ public class ForPeople extends Air {
                 + height + " lengthOfRoad: " + lengthOfRoad + " business: " + business + " maxPassangers " + maxPassangers);
     }
 
-    public double powerW(ForPeople o) {
+    public double powerW(PeoplesAirplane o) {
 
         double watt =o.power * 0.74;
         return watt;

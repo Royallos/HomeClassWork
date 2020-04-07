@@ -19,12 +19,12 @@ package lesson8.transport;
 //        проедет (xxx) км  и израсходует (xxx) литров топлива.
 
 
-public class Light extends Earth {
+public class LightAuto extends GroundAuto {
 
    int valueOfPassanger;
    String type;
 
-   public Light(String brand, double maxSpeed, double massa, int power, int wheels, double fuelPerDistance, int valueOfPassanger, String type) {
+   public LightAuto(String brand, double maxSpeed, double massa, int power, int wheels, double fuelPerDistance, int valueOfPassanger, String type) {
 
       super(brand, maxSpeed, massa, power, wheels, fuelPerDistance);
       this.valueOfPassanger = valueOfPassanger;
@@ -37,20 +37,20 @@ public class Light extends Earth {
               + wheels + " fuelPerDistance: " + fuelPerDistance + " valueOfPassanger: " + valueOfPassanger + " type " + type + " power in Watt: " + powerW(this));
    }
 
-   public double powerW(Light o) {
+   public double powerW(LightAuto o) {
 
       double watt =o.power * 0.74;
       return watt;
    }
 
 
-   public void moveWithMaxSpeed (Light o, int hour) {
+   public void moveWithMaxSpeed (LightAuto o, int hour) {
 
       double usedFuel = countFuelPerHour(this);
       System.out.println("Per " + hour + " hours, driving by " + o.brand + " with " + maxSpeed + "  you'll drive " + maxSpeed*hour + "km and use " + maxSpeed*hour/100*usedFuel + "l of fuel");
    }
 
-   private double countFuelPerHour (Light o) {
+   private double countFuelPerHour (LightAuto o) {
 
       double tmp = o.fuelPerDistance * 2;
       return tmp;

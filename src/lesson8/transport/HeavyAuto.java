@@ -9,11 +9,11 @@ package lesson8.transport;
 ////        Расчёт мощности в киловаттах производится в отдельном методе :
 ////        1 л.с = 0.74 кВ
 
-public class Heavy extends Earth {
+public class HeavyAuto extends GroundAuto {
 
     double pickUp;
 
-    public Heavy(String brand, double maxSpeed, double massa, int power, int wheels, double fuelPerDistance, double pickUp) {
+    public HeavyAuto(String brand, double maxSpeed, double massa, int power, int wheels, double fuelPerDistance, double pickUp) {
 
         super(brand, maxSpeed, massa, power, wheels, fuelPerDistance);
         this.pickUp = pickUp;
@@ -25,7 +25,7 @@ public class Heavy extends Earth {
                 + wheels + " fuelPerDistance: " + fuelPerDistance + " pickUp: " + pickUp + " power in Watt: " + powerW(this));
     }
 
-    public double powerW(Heavy o) {
+    public double powerW(HeavyAuto o) {
 
         double watt =o.power * 0.74;
         return watt;

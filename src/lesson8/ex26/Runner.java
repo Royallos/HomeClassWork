@@ -4,13 +4,8 @@ public class Runner {
 
     public static void main(String[] args) {
 
-        Owner vasya = new Owner("0000", "09/10", "credit", "mastercard", "vasya", "ivanov");
-        Type credit = new Type("0000", "09/10", "credit", "maestro");
+       DebitBalance card = new DebitBalance("0000", "05/10", "debit", "maestro", 100);
 
-        vasya.setNumber("0000");
-        System.out.println(vasya.getNumber());
 
-        credit.setType("credit");
-        System.out.println(credit.getType());
     }
 }

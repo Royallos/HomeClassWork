@@ -11,12 +11,12 @@ package lesson8.transport;
 
 
 
-public class Army extends Air {
+public class ArmyAirplane extends Airplane {
 
     boolean catapult;
     int rocket;
 
-    public Army (String brand, double maxSpeed, double massa, int power, double height, double lengthOfRoad, boolean catapult, int rocket) {
+    public ArmyAirplane(String brand, double maxSpeed, double massa, int power, double height, double lengthOfRoad, boolean catapult, int rocket) {
 
         super(brand, maxSpeed, massa, power, height, lengthOfRoad);
         this.catapult = catapult;
@@ -33,7 +33,7 @@ public class Army extends Air {
         + height + " lengthOfRoad: " + lengthOfRoad + " catapult: " + catapult + " rocket " + rocket);
     }
 
-    public double powerW(Army o) {
+    public double powerW(ArmyAirplane o) {
 
         double watt =o.power * 0.74;
         return watt;

@@ -5,12 +5,12 @@ package lesson8.transport;
 //        - Расход топлива(л/100км)
 
 
-public class Earth extends Transport {
+public class GroundAuto extends Transport {
 
     int wheels;
     double fuelPerDistance;
 
-    public Earth ( String brand, double maxSpeed, double massa, int power, int wheels, double fuelPerDistance) {
+    public GroundAuto(String brand, double maxSpeed, double massa, int power, int wheels, double fuelPerDistance) {
 
         super(brand, maxSpeed, massa, power);
         this.wheels = wheels;

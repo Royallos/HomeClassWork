@@ -1,15 +1,15 @@
 package lesson8.cosmos;
 
 public class Cosmodrom {
-    public static void main(String[] args) {
 
-        Shattle newShattle = new Shattle();
+        public void startShattle(IStart obj) {
 
-        if (newShattle.beforeStart()) {
+             if (obj.beforeStart()) {
 
-            System.out.println("Ok");
-            newShattle.startEngine();
-            newShattle.start();
+                 System.out.println("Ok");
+                 obj.startEngine();
+                 obj.start();
+             }
         }
-    }
 }
+

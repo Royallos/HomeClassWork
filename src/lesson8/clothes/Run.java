@@ -7,7 +7,7 @@ import lesson8.clothes.Shoes;
 public class Run {
     public static void main(String[] args) {
 
-        JacketClass jacket = new JacketClass();
+        Jacket jacket = new JacketClass();
         PantsClass pants = new PantsClass();
         ShoesClass shoes = new ShoesClass();
 
