@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device>
+<computer>
+    <name>acer</name>
+    <origin>korean</origin>
+    <cost currency = "usd">450</cost>
+    <type>
+        <version id = "1">2210</version>
+        <version id = "2">2530</version>
+        <version id = "3">2550</version>
+    </type>
+    <accessory>
+        <keyboard>no</keyboard>
+        <mouse>no</mouse>
+        <contain>
+            <usb>yes</usb>
+            <cooler>yes</cooler>
+        </contain>
+    </accessory>
+</computer>
+</device>
